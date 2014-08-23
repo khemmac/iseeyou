@@ -138,68 +138,6 @@
 				<img src="<?= base_url('assets/images/main/logo.gif') ?>" />
 			</div>
 			
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<!--
-				<a class="navbar-brand" href="index.html">Start Bootstrap</a>
-				-->
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-main" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li>
-						<a href="about.html" class="dreamzone">Dreamzone</a>
-						<ul class="dropdown-menu dd-dreamzone">
-							<li><h4>แดนละเมอ</h4></li>
-							<li>
-								พื้นที่แสดงความประทับใจของคุณต่อคนที่ได้พบเจอและอยากจะรู้จักระหว่างการเดินทาง
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="services.html" class="matching">Matching</a>
-						<ul class="dropdown-menu">
-							<li><h4>คนนี้ใช่เลย</h4></li>
-							<li>
-								บุคคลที่เราคัดสรรจากข้อมูลที่เรามี ว่าเขาเหมาะสมกับคุณ
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="contact.html" class="consult">Love consultant</a>
-						<ul class="dropdown-menu dd-consult">
-							<li><h4>ถามมา - ตอบตามใจ</h4></li>
-							<li>
-								รับปรึกษาปัญหาทุกเรื่อง จากกูรูพิเศษ ในทุกๆด้าน
-								แต่อย่าคาดหวังกับคำตอบของพวกเรามากนัก
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#" class="event">Event</a>
-						<ul class="dropdown-menu dd-event">
-							<li>
-								พบกันเร็วๆนี้
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#" class="souvenirs">Souvenirs</a>
-						<ul class="dropdown-menu dd-souvenirs">
-							<li>
-								พบกันเร็วๆนี้
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
 		</div>
 		<!-- /.container -->
 	</nav>
