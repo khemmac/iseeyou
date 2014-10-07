@@ -154,7 +154,7 @@
 			<div class="collapse navbar-collapse navbar-main" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="about.html" class="dreamzone">Dreamzone</a>
+						<a href="dreamzone" class="dreamzone">Dreamzone</a>
 						<ul class="dropdown-menu dd-dreamzone">
 							<li><h4>แดนละเมอ</h4></li>
 							<li>

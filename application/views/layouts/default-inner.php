@@ -58,17 +58,14 @@
 		
 		.navbar-main {
 			background-color:#96001e;
-			margin:7.5px -15px;;
+			margin:7.5px -15px;
+			width:250px;
 		}
 		.navbar-main a {
 			height:40px; padding:0px !important; text-indent:-4000px;
 			background-image: url('../assets/images/main/menu.gif');
 		}
 		.navbar-main a.dreamzone { background-position:0px 0px; width:200px; }
-		.navbar-main a.matching { background-position:-200px 0px; width:175px; }
-		.navbar-main a.consult { background-position:-370px 0px; width:255px; }
-		.navbar-main a.event { background-position:-625px 0px; width:160px; }
-		.navbar-main a.souvenirs { background-position:-785px 0px; width:170px; }
 		
 		.navbar-main .dropdown-menu { background-color:#ddd; padding:5px; }
 		.navbar-main .dropdown-menu h4 { color:#96001e; margin-top:0px; }
@@ -77,47 +74,47 @@
 		.navbar-main .dd-event { margin-left:7px; }
 		.navbar-main .dd-souvenirs { margin-left:22px; }
 		
-		.home-logo { padding:70px 0px 70px 0px; }
-		.home-logo-box { width:672px; height:197px; margin:0 auto; /*background:url('../assets/images/home_logo.gif');*/ position:relative; }
-		.home-logo-box a {
+		.home-logo-inner { position:absolute; top:0px; right:0px; }
+		.home-logo-inner-box { width:336px; height:99px; margin:0 auto; position:relative; }
+		.home-logo-inner-box a {
 			display:block; position:absolute; text-indent:-4000px; border:0px solid #f00;
-			background-image:url('../assets/images/home_logo.gif');
+			background-image:url('../assets/images/home_logo_small.gif');
 		}
-		.home-logo-box a.dreamzone {
-			top: 0px; left: 330px;
-			width: 280px; height:33px;
-			background-position:-330px 0px;
+		.home-logo-inner-box a.dreamzone {
+			top: 0px; left: 165px;
+			width: 140px; height:16px;
+			background-position:-165px 0px;
 		}
-		.home-logo-box a.dreamzone:hover { background-position:-330px -197px; }
+		.home-logo-inner-box a.dreamzone:hover { background-position:-165px -99px; }
 		
-		.home-logo-box a.matching {
-			top: 33px; left: 73px;
-			width: 532px; height:77px;
-			background-position:-73px -33px;
+		.home-logo-inner-box a.matching {
+			top: 16px; left: 36px;
+			width: 267px; height:39px;
+			background-position:-372px -16px;
 			
 		}
-		.home-logo-box a.matching:hover { background-position:-73px -230px; }
+		.home-logo-inner-box a.matching:hover { background-position:-372px -313px; }
 		
-		.home-logo-box a.consult {
-			top: 109px; left: 0px;
-			width: 340px; height:30px;
-			background-position:0px -109px;
+		.home-logo-inner-box a.consult {
+			top: 55px; left: 0px;
+			width: 170px; height:14px;
+			background-position:0px -55px;
 		}
-		.home-logo-box a.consult:hover { background-position:0px -306px; }
+		.home-logo-inner-box a.consult:hover { background-position:0px -154px; }
 		
-		.home-logo-box a.souvenir {
-			top: 111px; left: 346px;
-			width: 326px; height:52px;
-			background-position:-346px -111px;
+		.home-logo-inner-box a.souvenir {
+			top: 57px; left: 174px;
+			width: 162px; height:24px;
+			background-position:-174px -57px;
 		}
-		.home-logo-box a.souvenir:hover { background-position:-346px -308px; }
+		.home-logo-inner-box a.souvenir:hover { background-position:-174px -156px; }
 		
-		.home-logo-box a.event {
-			top: 165px; left: 308px;
-			width: 129px; height:33px;
-			background-position:-308px -165px;
+		.home-logo-inner-box a.event {
+			top: 82px; left: 153px;
+			width: 65px; height:17px;
+			background-position:-153px -82px;
 		}
-		.home-logo-box a.event:hover { background-position:-308px -362px; }
+		.home-logo-inner-box a.event:hover { background-position:-153px -181px; }
 		
 		.nav-bottom-login a.b-login {
 			width:78px; height:17px;
@@ -126,6 +123,31 @@
 		}
 		.nav-bottom-login a.b-login:hover { background-position:0px -17px; }
 		
+		
+		.hot-topic-container div.topic-child {
+			border:1px solid #96001e;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			
+			padding:10px; margin-bottom:5px;
+		}
+		
+		table, div {
+			font-size:small;
+		}
+		th { font-weight:bold; color:#96001e; padding-bottom:5px; }
+		
+		hr.footer-sep {
+			margin-top:2px;
+			border-top:4px solid #96001e;
+		}
+		
+		ul.nav-footer{
+			list-style:none;
+			height:40px;
+			background:#000 url('../assets/images/nav-footer.gif') no-repeat 0px 0px;
+			margin-bottom:2px;
+		}
 	</style>
 </head>
 
@@ -138,6 +160,42 @@
 				<img src="<?= base_url('assets/images/main/logo.gif') ?>" />
 			</div>
 			
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--
+				<a class="navbar-brand" href="index.html">Start Bootstrap</a>
+				-->
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-main" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="dreamzone" class="dreamzone">Dreamzone</a>
+						<ul class="dropdown-menu dd-dreamzone">
+							<li><h4>แดนละเมอ</h4></li>
+							<li>
+								พื้นที่แสดงความประทับใจของคุณต่อคนที่ได้พบเจอและอยากจะรู้จักระหว่างการเดินทาง
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+			<div class="home-logo-inner">
+				<div class="home-logo-inner-box">
+					<a href="dreamzone" class="dreamzone">DREAM ZONE</a>
+					<a href="matching" class="matching">MATCING</a>
+					<a href="consult" class="consult">CONSULT</a>
+					<a href="souvenir" class="souvenir">SOUVENIR</a>
+					<a href="event" class="event">EVENT</a>
+				</div>
+			</div>
 		</div>
 		<!-- /.container -->
 	</nav>
@@ -145,15 +203,7 @@
 	<!-- Page Content -->
 	<div class="container">
 		
-		<div class="home-logo">
-			<div class="home-logo-box">
-				<a href="" class="dreamzone">DREAM ZONE</a>
-				<a href="" class="matching">MATCING</a>
-				<a href="" class="consult">consult</a>
-				<a href="" class="souvenir">SOUVENIR</a>
-				<a href="" class="event">EVENT</a>
-			</div>
-		</div>
+		<?=$view?>
 
 		<hr>
 
@@ -179,51 +229,10 @@
 	</div>
 	<!-- /.container -->
 	
-	<script type="text/javascript">
-		$(function(){
-			$('.b-login').click(function(){
-				$('#modal-login').modal()
-			});
-		});
-	</script>
+	<?php
+		$this->load->view('partials/popup');
+	?>
 	
-	<div class="modal fade" id="modal-login">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					<h4 class="modal-title">LOG IN</h4>
-				</div>
-				<div class="modal-body">
-					
-					
-					<!-- Contact Form -->
-					<form name="sentMessage" id="contactForm" novalidate>
-						<div class="control-group form-group">
-							<div class="controls">
-								<label>Username (Email Address):</label>
-								<input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-							</div>
-						</div>
-						<div class="control-group form-group">
-							<div class="controls">
-								<label>Password:</label>
-								<input type="password" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-							</div>
-						</div>
-						<div id="success"></div>
-					</form>
-					<!-- /.row -->
-					
-					
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Submit</button>
-					<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Register</button>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
 </body>
 
 </html>

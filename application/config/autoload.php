@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array(/*'x','EnumConflictType',*/'ion_auth','PHXView','database','session');
+$autoload['libraries'] = array('x',/*'EnumConflictType',*/'ion_auth','PHXView','database','session');
 
 
 /*
@@ -109,7 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array();
+$autoload['model'] = array('base_model');
 
 
 /* End of file autoload.php */
